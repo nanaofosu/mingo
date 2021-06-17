@@ -1,0 +1,65 @@
+
+.App__container {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header"
+    "sidebar main";
+
+  .header{
+    grid-area: header;
+    background-color: rgb(46, 0, 0);
+    color: #ffffff;
+    padding: 10px;
+    position: sticky; 
+    top: 0;
+    z-index: 9999;
+
+  }
+
+  .sidebar{
+    grid-area: sidebar;
+    background-color: #800000;
+    padding: 10px;
+    height: 91vh;
+    
+  }
+  .main{
+    grid-area: main;
+    background-color: #ffffff;
+    padding: 10px;
+    height: 90vh;
+    // width: 99%;
+    transform: rotateX(180deg);
+
+    .message-textfield{
+      transform: rotateX(180deg);
+    }
+    .posts-wrapper{
+      max-height: 100%;
+    }
+  }
+}
+
+.register{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .auth-form{
+    &-fields{
+      display: flex;
+  justify-content: center;
+  align-items: center;
+    }
+  }
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  .right{
+    text-align: right;
+  }
+}

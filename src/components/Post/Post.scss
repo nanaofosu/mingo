@@ -1,0 +1,16 @@
+.Post {
+  display: flex;
+  padding: .5em 0;
+  transform: rotateX(180deg);
+
+  &:hover{
+      background-color: #f7f7f7;
+  }
+
+  .avatar{
+      margin: 0 5px;
+  }
+  .username{
+      font-weight: 700;
+  }
+}
